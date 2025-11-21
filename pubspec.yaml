@@ -1,0 +1,21 @@
+name: carnet_de_contact_flutter
+description: A simple contacts app ported from Java
+publish_to: 'none'
+version: 0.0.1
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  file_picker: ^10.3.6
+  sqflite: ^2.0.0+4
+  path: ^1.8.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
