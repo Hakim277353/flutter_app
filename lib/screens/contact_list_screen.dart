@@ -1,6 +1,5 @@
 /// Contact List Screen
 /// Displays, filters, and manages contacts. Includes manual dark mode toggle.
-/// Author: [Your Name]
 /// Date: 2025-11-17
 import 'package:flutter/material.dart';
 import 'package:file_picker/file_picker.dart';
@@ -25,6 +24,7 @@ class _ContactListScreenState extends State<ContactListScreen> {
   List<Contact> contacts = [];
   String searchQuery = '';
   String selectedGroup = 'Tous';
+
   String _sortMode = 'name_asc'; // name_asc | name_desc | favorite_first
   int _pageSize = 20;
   int _currentPage = 1;

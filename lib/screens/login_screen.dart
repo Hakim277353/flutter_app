@@ -34,7 +34,7 @@ class _LoginScreenState extends State<LoginScreen> {
       setState(() {
         _isLoading = false;
       });
-      _showSuccessDialog();
+      _navigateToContactsDirectly();
     });
   }
 
@@ -59,29 +59,11 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
-  /// Shows a success dialog and navigates to contact list
-  void _showSuccessDialog() {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: Text('Succès'),
-          content:
-              Text('Connexion réussie ! Bienvenue ${_emailController.text}'),
-          actions: [
-            TextButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-                _emailController.clear();
-                _passwordController.clear();
-                Navigator.of(context).pushReplacementNamed('/contacts');
-              },
-              child: Text('OK'),
-            ),
-          ],
-        );
-      },
-    );
+  /// Navigates directly to the contacts screen after successful login
+  void _navigateToContactsDirectly() {
+    _emailController.clear();
+    _passwordController.clear();
+    Navigator.of(context).pushReplacementNamed('/contacts');
   }
 
   @override
