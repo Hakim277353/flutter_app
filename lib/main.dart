@@ -1,6 +1,5 @@
 /// Main entry point for the Contact App.
 /// Handles theme, routing, and global configuration.
-/// Author: [Your Name]
 /// Date: 2025-11-17
 import 'package:flutter/material.dart';
 import 'screens/login_screen.dart';

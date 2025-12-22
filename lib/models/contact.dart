@@ -1,6 +1,5 @@
 /// Contact model representing a single contact entry.
 /// Includes name, phone, group, and favorite status.
-/// Author: [Your Name]
 /// Date: 2025-11-17
 class Contact {
   int? id;

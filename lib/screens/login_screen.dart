@@ -1,6 +1,5 @@
 /// Login Screen
 /// Handles user authentication and navigation to contact list.
-/// Author: [Your Name]
 /// Date: 2025-11-17
 import 'package:flutter/material.dart';
 

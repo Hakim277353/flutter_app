@@ -1,6 +1,5 @@
 /// Register Screen
 /// Handles user registration and validation.
-/// Author: [Your Name]
 /// Date: 2025-11-17
 import 'package:flutter/material.dart';
 
